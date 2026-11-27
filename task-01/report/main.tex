@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[margin=25mm]{geometry}
+\usepackage{hyperref}
+
+\title{Предсказание мощности волновой фермы
+по геометрии массива преобразователей}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Введение}
+\input{sections/01_introduction}
+
+\section{Описание набора данных}
+\input{sections/02_dataset}
+
+\section{Физические гипотезы}
+\input{sections/03_physical_hypotheses}
+
+\section{Геометрические признаки}
+\input{sections/04_feature_engineering}
+
+\section{Методология}
+\input{sections/05_methodology}
+
+\section{Результаты моделирования}
+\input{sections/06_results}
+
+\section{Устойчивость коэффициентов}
+\input{sections/07_coefficient_stability}
+
+\section{Перенос между волновыми сценариями}
+\input{sections/08_scenario_transfer}
+
+\section{Заключение}
+\input{sections/09_conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

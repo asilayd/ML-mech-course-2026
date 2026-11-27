@@ -1,0 +1,33 @@
+experiment:
+  random_seed: 42
+  holdout_scenario: Tasmania
+  interpolation_test_size: 0.2
+
+validation:
+  n_splits: 5
+  n_repeats: 10
+
+models:
+  polynomial_degrees: [1, 2, 3, 4]
+  alphas: [0.0001, 0.001, 0.01, 0.1, 1, 10, 100]
+
+data:
+  raw_path: data/raw/
+  processed_path: data/processed/
+  scenarios:
+    - Sydney
+    - Adelaide
+    - Perth
+    - Tasmania
+
+target: Powerall
+
+features:
+  - nn_min
+  - nn_mean
+  - pairwise_mean
+  - pairwise_std
+  - width
+  - height
+  - aspect_ratio
+  - spatial_variance
